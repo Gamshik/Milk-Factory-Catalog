@@ -6,6 +6,8 @@ import { ProductsModule } from '../products/products.module';
 
 @Module({
   imports: [
+    PrismaModule,
+    ProductsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
