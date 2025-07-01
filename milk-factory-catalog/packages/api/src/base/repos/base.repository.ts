@@ -8,29 +8,29 @@ export abstract class BasePrismaRepository<
 > {
   protected abstract readonly model: {
     findUnique(args: TFindUniqueArgs): Promise<TModel | null>;
-    findMany(args: TFindManyArgs): Promise<TModel[]>;
+    findMany(args?: TFindManyArgs): Promise<TModel[]>;
     create(args: TCreateArgs): Promise<TModel>;
     delete(args: TDeleteArgs): Promise<TModel>;
     update(args: TUpdateArgs): Promise<TModel>;
   };
 
-  async findUnique(args: TFindUniqueArgs): Promise<TModel | null> {
+  findUnique(args: TFindUniqueArgs): Promise<TModel | null> {
     return this.model.findUnique(args);
   }
 
-  async findMany(args: TFindManyArgs): Promise<TModel[]> {
+  findMany(args?: TFindManyArgs): Promise<TModel[]> {
     return this.model.findMany(args);
   }
 
-  async create(args: TCreateArgs): Promise<TModel> {
+  create(args: TCreateArgs): Promise<TModel> {
     return this.model.create(args);
   }
 
-  async delete(args: TDeleteArgs): Promise<TModel> {
+  delete(args: TDeleteArgs): Promise<TModel> {
     return this.model.delete(args);
   }
 
-  async update(args: TUpdateArgs): Promise<TModel> {
+  update(args: TUpdateArgs): Promise<TModel> {
     return this.model.update(args);
   }
 }

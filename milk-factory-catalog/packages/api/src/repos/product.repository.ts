@@ -12,9 +12,9 @@ export class ProductRepository extends BasePrismaRepository<
   Prisma.ProductUpdateArgs,
   Prisma.ProductDeleteArgs
 > {
-  constructor(private readonly prismaService: PrismaService) {
+  constructor(private readonly prisma: PrismaService) {
     super();
   }
 
-  protected readonly model = this.prismaService.product;
+  protected readonly model = this.prisma.product;
 }
