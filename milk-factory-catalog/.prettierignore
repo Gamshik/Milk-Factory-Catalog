@@ -3,3 +3,15 @@
 /coverage
 /.nx/cache
 /.nx/workspace-data
+
+# General
+node_modules
+dist
+.nx/cache
+
+# Logs
+logs
+*.log
+
+# Environment
+.env

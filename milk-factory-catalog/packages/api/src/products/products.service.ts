@@ -5,14 +5,12 @@ import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class ProductsService {
-    constructor(
-      private readonly prismaService: PrismaService, 
-    ) {}
+  constructor(private readonly prismaService: PrismaService) {}
 
   async create(createProductDto: CreateProductDto) {
     const product = await this.prismaService.product.create({
       data: createProductDto,
-    })
+    });
     return product;
   }
 
@@ -26,9 +24,8 @@ export class ProductsService {
         id,
       },
     });
-    
-    if (!product)
-      throw new NotFoundException('Product not found');
+
+    if (!product) throw new NotFoundException('Product not found');
 
     return product;
   }
