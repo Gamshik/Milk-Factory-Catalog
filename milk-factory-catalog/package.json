@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,scss,css,html}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,scss,css,html}\"",
+    "db:seed": "ts-node packages/api/prisma/seed.ts"
   },
   "private": true,
   "devDependencies": {
@@ -49,7 +50,7 @@
     "prisma": "^6.10.1",
     "sass": "1.62.1",
     "ts-jest": "^29.1.0",
-    "ts-node": "10.9.1",
+    "ts-node": "^10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0",
