@@ -1,0 +1,214 @@
+@import '../../styles/variables';
+
+.home {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $text-color;
+}
+
+/*
+ * Hero Section
+ */
+.hero {
+  background: linear-gradient(135deg, #e6f7ff 0%, #ffffff 100%);
+  color: $text-color;
+  text-align: center;
+  padding: 4rem 1rem; // Mobile-first padding
+
+  // 👇 Styles for tablet and larger are nested here
+  @media (min-width: 768px) {
+    padding: 6rem 1rem;
+  }
+}
+
+.heroContent {
+  max-width: 750px;
+}
+
+.heroTitle {
+  font-size: 2.5rem; // Mobile-first font size
+  font-weight: 800;
+  line-height: 1.2;
+  color: $primary-color;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.1rem; // Mobile-first font size
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.heroButton {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 90, 156, 0.2);
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: translateY(-3px);
+  }
+}
+
+.categories {
+  padding: 5rem 0;
+}
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.categoryCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: $text-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+}
+.categoryIcon {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+// NEW: About Section
+.about {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr; // Mobile first: single column
+  align-items: center;
+  gap: 3rem;
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr; // Two columns on desktop
+  }
+}
+.aboutTextContent {
+  text-align: left;
+}
+.aboutText {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.aboutButton {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+.aboutImageContainer {
+  text-align: center;
+}
+.aboutImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  color: lighten($primary-color, 30%); // Gives the SVG a fill color
+}
+
+/*
+ * Features Section
+ */
+.features {
+  padding: 4rem 0;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    padding: 5rem 0;
+  }
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: 1fr; // Mobile-first: 1 column
+  gap: 2rem;
+
+  // Desktop and larger
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); // 3 columns on desktop
+  }
+}
+
+.featureCard {
+  padding: 2.5rem 2rem;
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+
+  // Best Practice: Control responsive size with CSS
+  @media (max-width: 768px) {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.featureTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: $text-color;
+}
+
+.featureText {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}

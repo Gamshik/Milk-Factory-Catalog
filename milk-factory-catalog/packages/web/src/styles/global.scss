@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-sans;
+  color: $text-color;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+// A reusable container to center content
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main {
+  min-height: calc(100vh - 150px); // Ensures footer is pushed down
+}

@@ -1,0 +1,49 @@
+{
+  "Navigation": {
+    "about": "About",
+    "products": "Products",
+    "whereToBuy": "Where to Buy",
+    "contacts": "Contacts"
+  },
+  "HomePage": {
+    "heroTitle": "The Freshest Milk, from Our Farm to Your Family",
+    "heroSubtitle": "Experience the pure, natural taste of tradition in every drop.",
+    "heroButton": "Explore Our Products",
+    "feature1Title": "Pasture-Raised",
+    "feature1Text": "Our cows graze freely on lush, green pastures, ensuring the highest quality milk.",
+    "feature2Title": "Eco-Friendly",
+    "feature2Text": "We are committed to sustainable farming practices that protect our environment.",
+    "feature3Title": "Family Owned",
+    "feature3Text": "A tradition of quality passed down through generations since 1958."
+  },
+  "ProductCategories": {
+    "title": "Our Products",
+    "milk": "Classic Milk",
+    "yogurt": "Yogurts & Fermented",
+    "cheese": "Cheese & Curds"
+  },
+  "AboutSection": {
+    "title": "A Tradition of Natural Quality",
+    "text": "For over 60 years, our family-owned factory has been dedicated to producing the highest quality dairy products. We combine time-honored traditions with modern technology to bring the pure taste of nature from our local farms directly to your table. Our commitment is to freshness, taste, and the well-being of our community.",
+    "button": "Learn More About Us"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ru": "Русский",
+    "be": "Беларуская"
+  },
+  "Footer": {
+    "productsTitle": "Products",
+    "companyTitle": "Company",
+    "contactsTitle": "Contacts",
+    "address": "Prolettarskaya str. 114, Mozyr, Gomel region, Belarus",
+    "copyright": "© {year} Mozyr Dairy Products. All rights reserved.",
+    "linkMilk": "Classic Milk",
+    "linkYogurt": "Yogurts",
+    "linkCheese": "Cheese",
+    "linkAbout": "About Us",
+    "linkVacancies": "Vacancies",
+    "linkContacts": "Contacts"
+  }
+}

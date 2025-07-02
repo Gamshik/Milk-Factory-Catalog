@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "nx run-many --target=serve --projects=api,web --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,scss,css,html}\"",
     "db:seed": "ts-node packages/api/prisma/seed.ts"
   },
@@ -57,7 +58,8 @@
     "webpack-cli": "^5.1.4"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "webb"
   ],
   "dependencies": {
     "@nestjs/common": "^11.0.0",
