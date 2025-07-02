@@ -45,5 +45,48 @@
     "linkAbout": "About Us",
     "linkVacancies": "Vacancies",
     "linkContacts": "Contacts"
+  },
+  "AboutPage": {
+    "title": "About Our Factory",
+    "subtitle": "Combining cherished traditions with modern technology to deliver natural quality.",
+    "historyTitle": "Our History: A Legacy of Taste",
+    "history1944": "The story begins with the establishment of the Mozyr City Dairy Plant.",
+    "history1995": "Reorganized into OJSC 'Mozyr Dairy Products'.",
+    "history2004": "The plant undergoes a massive technical modernization.",
+    "history2017": "Certified for compliance with international quality standards.",
+    "missionTitle": "Our Mission & Values",
+    "value1Title": "Natural Ingredients",
+    "value1Text": "We use only fresh, natural milk from certified local farms, ensuring the purity of our products.",
+    "value2Title": "Quality Control",
+    "value2Text": "A multi-stage quality control system, from raw milk to finished goods, guarantees safety and taste.",
+    "value3Title": "Cherished Traditions",
+    "value3Text": "We honor timeless recipes while innovating with modern equipment to perfect our products."
+  },
+  "ContactsPage": {
+    "title": "Our Contacts",
+    "subtitle": "We are always open to communication and new opportunities.",
+    "reception": "Reception",
+    "salesDept": "Sales Department",
+    "marketingDept": "Marketing Department",
+    "addressTitle": "Our Address",
+    "hoursTitle": "Working Hours",
+    "hoursDays": "Monday - Friday",
+    "hoursTime": "08:30 - 17:30",
+    "lunch": "Lunch Break: 13:00 - 13:45"
+  },
+  "WhereToBuyPage": {
+    "title": "Where to Buy",
+    "subtitle": "Find our products in a store near you.",
+    "searchPlaceholder": "Search by city or address..."
+  },
+  "ProductsPage": {
+    "title": "Our Products",
+    "subtitle": "Always fresh, natural, and made with care.",
+    "nutritionTitle": "Nutrition Facts",
+    "proteins": "Proteins",
+    "fats": "Fats",
+    "carbs": "Carbohydrates",
+    "calories": "Calories",
+    "per100g": "per 100g"
   }
 }

@@ -42,13 +42,17 @@ export const Header = () => {
 
         <div className={styles.headerControls}>
           <LanguageSwitcher /> {/* 👈 Add language switcher here */}
+          {/* Burger Button - only visible on mobile */}
           <button
             className={styles.burgerButton}
             onClick={toggleMenu}
             aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
           >
-            <div className={styles.burgerIconWrapper}>
+            <div
+              className={`${styles.burgerIcon} ${
+                isMenuOpen ? styles.open : ''
+              }`}
+            >
               <div
                 className={`${styles.burgerBar} ${
                   isMenuOpen ? styles.open : ''
@@ -67,27 +71,6 @@ export const Header = () => {
             </div>
           </button>
         </div>
-
-        {/* Burger Button - only visible on mobile */}
-        <button
-          className={styles.burgerButton}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <div
-            className={`${styles.burgerIcon} ${isMenuOpen ? styles.open : ''}`}
-          >
-            <div
-              className={`${styles.burgerBar} ${isMenuOpen ? styles.open : ''}`}
-            />
-            <div
-              className={`${styles.burgerBar} ${isMenuOpen ? styles.open : ''}`}
-            />
-            <div
-              className={`${styles.burgerBar} ${isMenuOpen ? styles.open : ''}`}
-            />
-          </div>
-        </button>
 
         {/* Mobile Navigation Menu */}
         <div className={`${styles.mobileNav} ${isMenuOpen ? styles.open : ''}`}>

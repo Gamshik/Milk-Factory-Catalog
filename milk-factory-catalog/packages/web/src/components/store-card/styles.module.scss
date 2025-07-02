@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.storeCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.storeName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: 0.5rem;
+}
+
+.storeAddress {
+  color: #666;
+  line-height: 1.6;
+}
