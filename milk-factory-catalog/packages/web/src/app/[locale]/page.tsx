@@ -20,7 +20,7 @@ import { useIsMobile } from '@/hooks/use-is-mobile';
 
 export default function HomePage() {
   const isMobile = useIsMobile();
-
+  
   return (
     <div className={styles.home}>
       {/* --- Hero Section --- */}

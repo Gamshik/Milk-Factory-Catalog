@@ -10,9 +10,10 @@ services:
       POSTGRES_PASSWORD: 12345
       POSTGRES_DB: milk_factory
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - pgdata:/var/lib/postgresql/data
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: milk-factory-pgadmin
@@ -21,12 +22,12 @@ services:
       PGADMIN_DEFAULT_EMAIL: gleb@admin.com
       PGADMIN_DEFAULT_PASSWORD: 123456
     ports:
-      - "5050:80"
+      - '5050:80'
     volumes:
       - pgadmin-data:/var/lib/pgadmin
     depends_on:
       - db
-  
+
 volumes:
   pgdata:
   pgadmin-data:

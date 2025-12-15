@@ -55,9 +55,9 @@ export const Footer = () => {
             <Link href="/about" className={styles.linkItem}>
               <TranslatedText namespace="Footer" tKey="linkAbout" />
             </Link>
-            <Link href="/about/vacancies" className={styles.linkItem}>
+            {/* <Link href="/about/vacancies" className={styles.linkItem}>
               <TranslatedText namespace="Footer" tKey="linkVacancies" />
-            </Link>
+            </Link> */}
             <Link href="/contacts" className={styles.linkItem}>
               <TranslatedText namespace="Footer" tKey="linkContacts" />
             </Link>
